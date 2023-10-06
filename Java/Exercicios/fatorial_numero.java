@@ -1,13 +1,15 @@
 public class fatorial_numero {
-public static void main (String [] args){
-	
-	int i, Fat = 4;
-	 
-	  for (i = 1; i <= Fat; i++){
-		
-		Fat=Fat*i;
-		}
-    System.out.print(Fat);
-	     	
+
+    public static void main(String[] args){
+
+int num = 5; // Fatorial a ser calculado
+int fat = 1; 
+
+for(int i = 1; i <= num; i++){ // percorrendo o i até chegar no numero definido
+fat = fat * i;
 }
+
+System.out.println("!" + num + " = " + fat); // printando o resultado
+
+	}
 }	
