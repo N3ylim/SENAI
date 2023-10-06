@@ -14,7 +14,7 @@ public class numero_primo {
         primo = false; // caso a condição acima esteja de acordo, o número não é primo
     } else {
         for (int i = 2; i < numero; i++) { 
-            if (numero % i == 0) // caso o resto seja igual azero, o número não é primo
+            if (numero % i == 0) // caso o resto seja igual a zero, o número não é primo
             primo = false;
             break; // parando o loop
 }
