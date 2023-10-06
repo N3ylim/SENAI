@@ -1,0 +1,13 @@
+public class fatorial_numero {
+public static void main (String [] args){
+	
+	int i, Fat = 4;
+	 
+	  for (i = 1; i <= Fat; i++){
+		
+		Fat=Fat*i;
+		}
+    System.out.print(Fat);
+	     	
+}
+}	
