@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class media {
     public static void main(String[] args) {
-         Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Digite 3 numeros para fazer a média dos números");
         
