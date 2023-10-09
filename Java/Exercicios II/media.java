@@ -4,7 +4,7 @@ public class media {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Digite 3 numeros para fazer a média dos números");
+        System.out.print("Digite 3 numeros para fazer a média dos números"); // pedindo 3 números ao usuário
         
         System.out.print("\nN° 1: ");
         int n1 = scanner.nextInt();
@@ -17,9 +17,9 @@ public class media {
         
      
 
-        int soma = n1 + n2 + n3;
-        int media = soma / 3;
+        int soma = n1 + n2 + n3; // fazendo o calculo da soma
+        int media = soma / 3; // fazendo o calculo da média com a variavel da soma
 
-        System.out.println("A média dos números é: " + media);
+        System.out.println("A média dos números é: " + media); // printando o resultado
     }
 }
