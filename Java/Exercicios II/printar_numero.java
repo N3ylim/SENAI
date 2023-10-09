@@ -1,6 +1,9 @@
 public class printar_numero {
     public static void main(String[] args) {
-        double numero = 50.5;
+        Scanner Scaner = new Scanner(System.in);
+
+        System.out.print("Digite um número: ");
+        double numero = Scaner.nextDouble();
 
         System.out.printf("Treinando pela vigésima vez como printar um número: '%.1f'", numero);
     }
