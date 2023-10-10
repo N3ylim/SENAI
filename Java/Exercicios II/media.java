@@ -21,5 +21,6 @@ public class media {
         int media = soma / 3; // fazendo o calculo da média com a variavel da soma
 
         System.out.println("A média dos números é: " + media); // printando o resultado
+        Scanner.close();
     }
 }
