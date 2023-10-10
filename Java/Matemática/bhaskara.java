@@ -27,9 +27,8 @@ public class bhaskara {
 
             System.out.println("x1: " + x1); // printando o resultado
             System.out.println("x2: " + x2);
-
-            Scaner.close();
         }
+        Scanner.close();
 
     }
 }
