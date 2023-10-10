@@ -6,5 +6,7 @@ public class print_idade {
         int idade = Scaner.nextInt();
         
         System.out.printf("Sua idade é: %d anos", idade); // printando o resultado
+        
+        Scanner.close();
     }
 }
