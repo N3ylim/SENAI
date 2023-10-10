@@ -6,6 +6,7 @@ public class printar_nome {
         String nome = Scaner.nextLine();
 
         System.out.printf("Treinando pela vigésima vez como printar o meu nome: '%s'", nome); // printando o resultado
+        Scanner.close();
     }
 }
 
