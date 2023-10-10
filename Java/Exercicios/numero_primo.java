@@ -24,6 +24,8 @@ public class numero_primo {
     } else {
         System.out.println("Não é um número primo");
     }
+
+    Scanner.close();
   }
    }
 
