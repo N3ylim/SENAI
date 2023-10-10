@@ -13,6 +13,7 @@ public class par_impar {
     }
     else {
          System.out.println("O número é ímpar");
+    Scanner.close();
   }
  }
 }
