@@ -13,6 +13,8 @@ public class area {
         double area = n1 * n2; // fazendo o calculo da area
 
         System.out.printf("A aréa é: " + area); // printando o resultado
+        
+        Scanner.close();
     }
 }
  
