@@ -13,5 +13,6 @@ public class soma {
         int soma = n1 + n2; // fazendo o cálculo dos números pedidos
 
         System.out.println("A soma dos numeros é: " + soma); // printando o resultado
+        Scanner.close();
     }
 }
