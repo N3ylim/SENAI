@@ -11,7 +11,6 @@ public class area_perimetro {
         double area = 3.14 * 2 * raio; // fazendo o calculo da area
 
         System.out.println("A circunferencia do circulo: " + area); // printando o resultado
-
-
+        Scanner.close();
     }
 }
