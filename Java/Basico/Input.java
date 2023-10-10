@@ -15,6 +15,8 @@ public class Input {
 
         System.out.println("Nome: " + nome);
         System.out.println("Idade: " + idade);
+
+        Scanner.close();
     }
 
 }
