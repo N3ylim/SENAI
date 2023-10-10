@@ -14,5 +14,6 @@ public class positivo_negativo {
     else {
          System.out.println("O número é negativo");
   }
+    Scanner.close();
  }
 }
