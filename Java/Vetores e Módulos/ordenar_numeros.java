@@ -1,31 +1,30 @@
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class ordenar_numeros {
+    public static void main(String[] args) {
+        List<Integer> listaOriginal = new ArrayList<>(); // executando a função
+        Scanner ler = new Scanner(System.in);
 
-    public static void bubbleSort(List<Integer> lista) {
-
-        for (int i = 0; i < lista.size() - 1; i++) {
-
-            for (int j = i + 1; j < lista.size(); j++) {
-
-                if (lista.get(i) > lista.get(j)) {
-                    int aux = lista.get(i);
-                    lista.set(i, lista.get(j));
-                    lista.set(j, aux);
-                }
-            }
+        System.out.println("Digite 8 números: "); // printando o resultado
+        for(int i = 0; i < 8; i++){ // percorrer a lista
+            int numero = ler.nextInt();
+            listaOriginal.add(numero);
         }
+
+        ordenarLista(listaOriginal); // executando a função
+
+        ler.close();
     }
 
-    public static void main(String[] args) {
+    public static void ordenarLista(List<Integer> lista){
 
-        List<Integer> lista = Arrays.asList(5, 2, 8, 1, 9, 3);
-
-        System.out.println("Lista original: " + lista);
-
-        bubbleSort(lista);
-
-        System.out.println("Lista ordenada: " + lista);
+        lista.sort(null);
+        
+        System.out.println("\nNova lista ordenada: "); // printando o resultado
+        for(int i = 0; i < lista.size(); i++){
+            System.out.print(lista.get(i) + " ");
+        }
     }
 }
