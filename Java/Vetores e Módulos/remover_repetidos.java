@@ -1,28 +1,34 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-
 public class remover_repetidos {
+    public static void main(String[] args) {
+        int[] vetor = {1, 2, 3, 2, 1, 4, 5, 3};
 
-    public static List<Integer> removerElementosRepetidos(List<Integer> lista) {
+        int novoTamanho = removeRepetidos(vetor);
 
-        HashSet<Integer> conjunto = new HashSet<>();
-
-        for (Integer numero : lista) {
-            conjunto.add(numero);
+        System.out.println("Vetor sem elementos repetidos: ");
+        for (int i = 0; i < novoTamanho; i++) {
+            System.out.println(vetor[i] + " ");
         }
-
-        return new ArrayList<>(conjunto);
     }
 
-    public static void main(String[] args) {
+    public static int removeRepetidos(int[] vetor) {
+        int novoTamanho = 0;
 
-        List<Integer> lista = Arrays.asList(1, 2, 3, 2, 1, 4, 5, 3);
+        for (int i = 0; i < vetor.length; i++) {
+            boolean repetido = false;
 
-        List<Integer> listaSemRepetidos = removerElementosRepetidos(lista);
+            for (int j = 0; j < novoTamanho; j++) {
+                if (vetor[i] == vetor[j]) {
+                    repetido = true;
+                    break;
+                }
+            }
 
-        System.out.println("Lista original: " + lista);
-        System.out.println("Lista sem elementos repetidos: " + listaSemRepetidos);
+            if (!repetido) {
+                vetor[novoTamanho] = vetor[i];
+                novoTamanho++;
+            }
+        }
+
+        return novoTamanho;
     }
 }
