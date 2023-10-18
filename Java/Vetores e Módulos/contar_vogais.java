@@ -1,33 +1,25 @@
-
 import java.util.Scanner;
 
 public class contar_vogais {
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite uma frase: ");
+        String frase = ler.nextLine().toLowerCase();
 
-    public static int contarVogais(String frase) { // executando a função
+        contarVogais(frase);
 
-        int numeroDeVogais = 0; // definindo a variável
+        ler.close();
+    }
 
-        for (char caractere : frase.toCharArray()) {
-
-            if (Character.isLetter(caractere) && (caractere == 'a' || caractere == 'e' || caractere == 'i' // verificando os caracteres
-                    || caractere == 'o' || caractere == 'u')) { 
-                numeroDeVogais++;
+    public static void contarVogais(String frase){
+        int contador = 0;
+        for(int i = 0; i < frase.length(); i++){
+            if (frase.charAt(i) == 'a' || frase.charAt(i) == 'e' || frase.charAt(i) == 'i' || frase.charAt(i) == 'o' || frase.charAt(i) == 'u'){
+                contador++;
             }
         }
 
-        return numeroDeVogais; // retornando a função
-    }
+        System.out.println("Número de vogais: " + contador);
 
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-
-        System.out.println("Digite uma palavra: "); // pedindo ao usuário um palavra
-        String palavra = scan.nextLine();
-
-        int numeroDeVogais = contarVogais(palavra);
-
-        System.out.println("Número de vogais: " + numeroDeVogais); // printando o resultado
-
-        scan.close();
     }
 }
