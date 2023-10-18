@@ -3,17 +3,13 @@ import java.util.Scanner;
 public class verificar_palindromo {
 
     public static boolean ehPalindromo(String palavra) {
-        // Inicializa a palavra invertida.
-        String palavraInvertida = "";
+        String palavraInvertida = ""; // Inicializa a palavra invertida.
 
-        // Percorre a palavra original de trás para frente.
-        for (int i = palavra.length() - 1; i >= 0; i--) {
-            // Adiciona o caractere atual da palavra original à palavra invertida.
-            palavraInvertida += palavra.charAt(i);
+        for (int i = palavra.length() - 1; i >= 0; i--) { // Percorre a palavra original de trás para frente.
+            palavraInvertida += palavra.charAt(i); // Adiciona o caractere atual da palavra original à palavra invertida.
         }
 
-        // Compara a palavra original com sua versão invertida.
-        return palavra.equals(palavraInvertida);
+        return palavra.equals(palavraInvertida); / // retornando o resultado
     }
 
     public static void main(String[] args) {
@@ -21,11 +17,9 @@ public class verificar_palindromo {
         System.out.println("Digite uma palavra: ");
         String palavra = scan.nextLine();
 
-        // Verifica se a palavra é um palíndromo.
-        boolean ehPalíndromo = ehPalindromo(palavra);
+        boolean ehPalíndromo = ehPalindromo(palavra); // Verifica se a palavra é um palíndromo.
 
-        // Imprime o resultado.
-        if (ehPalíndromo) {
+        if (ehPalíndromo) { // printando o resultado
             System.out.println("A palavra é um palíndromo.");
         } else {
             System.out.println("A palavra não é um palíndromo.");
